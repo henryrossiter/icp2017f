@@ -29,9 +29,5 @@ This repository contains my homework, quizzes, and virtually every effort that I
 +[exams](https://github.com/henryrossiter/icp2017f/tree/master/exam):This directory contains all my exam submissions, each of which is a folder properly named with exam name or number, containing the exam submission.
 
 For questions and troubleshooting, please contact:
-
-
 Henry Rossiter
-
-
 henry.rossiter@utexas.edu
