@@ -1,4 +1,4 @@
-#Question 1 Code
+# Question 1 Code
 
 ```>> a =1
 
@@ -81,7 +81,7 @@ h =
   f         1x4                 8  char                
   h         1x4               491  cell                
 ```
-#Question 1 Explanations
+# Question 1 Explanations
 
 ```>> a = 1```  assigns the value 1 to variable a
 
@@ -119,7 +119,7 @@ h =
 ```>> whos d e f g h``` displays information about all of the variables that have been created. Variable g was never created.
 
 
-#Question 2
+# Question 2
 
 
 ```>> b = int8(300)
@@ -166,7 +166,7 @@ min32 =
    -2147483648
 ```
 
-#Question 3 Code
+# Question 3 Code
 
 ```>> 1\2
 
@@ -221,7 +221,7 @@ ans =
     30
 ```
 
-#Question 3 Explanations
+# Question 3 Explanations
 
 ```>> 1\2``` divides 2 by 1
 
@@ -238,3 +238,148 @@ ans =
 ```>> 10-6/2 ``` computes the expression using order of operations
 
 ```>> 5*4/2*3``` computes the expression using order of operations
+
+# Question 4 (a)
+
+```>> a = [1 0;2 1]```
+
+```>> b= [-1 2;0 1]```
+
+```>> c = [3;2]```
+
+```>> d = 5
+```
+
+
+# Question 4 (b) Code
+
+```>> a+b
+
+ans =
+
+     0     2
+     2     2
+
+>> a.*b
+
+ans =
+
+    -1     0
+     0     1
+
+>> a*b
+
+ans =
+
+    -1     2
+    -2     5
+
+>> a*c
+
+ans =
+
+     3
+     8
+
+>> a+c
+
+ans =
+
+     4     3
+     4     3
+
+>> a+d
+
+ans =
+
+     6     5
+     7     6
+
+>> a.*d
+
+ans =
+
+     5     0
+    10     5
+
+>> a*d
+
+ans =
+
+     5     0
+    10     5
+```
+# Question 4 (b) Explanations
+
+```a + b``` returns a new matrix with each element being the sum of the corresponding elements from a and b
+
+```a .* b``` returns a new matrix with each element being the sum of the corresponding elements from a and b
+
+```a * b``` multiplies two matrices using a certain formula.
+
+```a * c``` multiplies two matrices using a certain formula.
+
+```a + c``` adds the elements in c to each column in a
+
+```a + d``` adds d to every element in a
+
+```a .* d``` multiplies every element in a by d
+
+```a * d ``` multiplies every element in a by d
+
+# Question 5
+
+## Method 1
+
+```>> a = zeros(3,3);
+
+>> a([1,5,9]) = 2
+
+a =
+
+     2     0     0
+     0     2     0
+     0     0     2
+     ```
+
+## Method 2
+
+```>> a = eye(3);
+
+>> a = a*2
+
+a =
+
+     2     0     0
+     0     2     0
+     0     0     2
+```
+
+## Method 3
+
+```>> v = [2,2,2];
+>> a = diag(v)
+
+a =
+
+     2     0     0
+     0     2     0
+     0     0     2
+```
+
+# Question 6
+
+ (in annotated script_full_of_errors_fixed.m file)
+
+#  Question 7
+
+```>> mkdir mynewdir
+```
+(figure is in homework 2 folder)
+
+# Question 8
+
+```Undefined function or variable 'myscript'.
+```
+
+This error occurs because matlab cant find the .m file called myscript since I haven't told it what folder to look in.
