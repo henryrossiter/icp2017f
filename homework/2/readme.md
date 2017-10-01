@@ -128,7 +128,8 @@ b =
 
   int8
 
-   127```
+   127
+```
 
 If you typecast an integer that is too large for its type, it will automatically be reduced to the largest possible value. If you typecast an integer that is to small, it will be increased to the smallest possible value.
 
@@ -162,7 +163,8 @@ min32 =
 
   int32
 
-   -2147483648```
+   -2147483648
+```
 
 #Question 3 Code
 
@@ -216,7 +218,8 @@ ans =
 
 ans =
 
-    30```
+    30
+```
 
 #Question 3 Explanations
 
