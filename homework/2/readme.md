@@ -247,7 +247,7 @@ ans =
 
 ```>> c = [3;2]```
 
-```>> d = 5
+```>> d = 5```
 ```
 
 
@@ -340,7 +340,7 @@ a =
      2     0     0
      0     2     0
      0     0     2
-     ```
+```
 
 ## Method 2
 
@@ -373,13 +373,12 @@ a =
 
 #  Question 7
 
-```>> mkdir mynewdir
-```
+```>> mkdir mynewdir```
+
 (figure is in homework 2 folder)
 
 # Question 8
 
-```Undefined function or variable 'myscript'.
-```
+```Undefined function or variable 'myscript'.```
 
 This error occurs because matlab cant find the .m file called myscript since I haven't told it what folder to look in.
