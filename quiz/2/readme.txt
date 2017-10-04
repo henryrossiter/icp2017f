@@ -7,7 +7,7 @@ b.1954
 3.a.Assembly
 b. 3rd Generation
 
-4.1980s,1990s,2000s
+4.1970s,1980s,2000s
 
 5. Fortran
 
