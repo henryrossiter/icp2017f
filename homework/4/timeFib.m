@@ -1,9 +1,9 @@
 function output = timeFib(n)
         if ~ischar(n) && isreal(n) && n>=0 && round(n)==n
-            output.fib = getFib(n);
             output.n = n;
+            output.fib = getFib(n);
             f = @() getFib(n);
-            output.time = timeit(f);
+            output.runtime = timeit(f);
         else
             disp('The input argument is not a non-negative integer!')
         end

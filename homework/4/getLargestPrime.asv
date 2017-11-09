@@ -1,0 +1,11 @@
+function f = getLargestPrime(n)
+    if n<=0 || mod(n,1)~=0
+        disp('the input was not a positive integer')
+    else
+        for i = n:-1:1
+            if isPrime(i)
+                f = i;
+                
+        end
+    end
+end
