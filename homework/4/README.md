@@ -39,7 +39,26 @@ Precision is lost when this is done because the code uses doubles which hold 64 
 
 Once eps is smaller than the smallest number that a matlab double can hold, eps will be evaluated as equivalent to 0. This occurs once eps <= 2.204e-16 since a double holds 64 bytes. Once this value is achieved, MATLAB will consider eps to be 0 and 1.0~=1.0+eps will be evaluated as false.
 
-7.
+7.(B)
+
+I have made the both the placeholder solution (fibLoop.m) and the vector based approach (extraCredit.m). After testing both approaches, the placeholder solution seems to be slightly faster, as shown below.
+```
+>> extraCredit
+Please enter a non-negative integer or type stop: 200
+	fib(200) = 1.734025211727978e+41
+	average runtime: 9.4103e-06 seconds
+Please enter a non-negative integer or type stop: stop
+>> fibLoop
+Please enter a non-negative integer or type stop: 200
+	fib(200) = 2.805711729925102e+41
+Warning: The measured time for F may be inaccurate because it is running too fast. Try measuring something that takes
+longer.
+> In timeit (line 158)
+  In fibLoop (line 12)
+	average runtime: 2.8367e-06 seconds
+```
+
+7.(C)
 ```
 >> fib
 Please enter a non-negative integer or type stop: 10
@@ -86,6 +105,6 @@ Please enter a non-negative integer or type stop: 35
 Please enter a non-negative integer or type stop: stop
 ```
 
-(C) fibLoop is much faster than fib. With higher inputs, the difference between the time the iterative approach takes and the time the recursive approach takes becomes bigger and bigger.
+FibLoop is much faster than fib. With higher inputs, the difference between the time the iterative approach takes and the time the recursive approach takes becomes bigger and bigger.
 
 fibLoop is more time and memory efficient than fib. This is true because every time fib is called, it calls itself twice. This results in the time it takes to increase exponentially with higher inputs. In fibLoop, the times the loop has to run is only equal to the input, so it won't increase exponentially with higher inputs.
