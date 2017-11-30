@@ -1,5 +1,0 @@
-function f = getFacVecExtraCredit(n)
-m = 1:(n^2)
-f = sum(m);
-
-end
